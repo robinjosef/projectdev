@@ -1,0 +1,328 @@
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(244, 255, 251), rgb(234, 247, 255));
+  min-height: 100vh;
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 5vw;
+  color: rgb(56, 56, 56);
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 3vw;
+  color: rgb(85, 85, 85);
+  margin-bottom: 20px;
+}
+
+/* Menu */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100dvw;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+  height: 7vh;
+}
+.logo {
+  justify-self: flex-start;
+  margin-left: 10px;
+  margin-right: auto;
+}
+.logo-img {
+  left: 0;
+  height: 5vh;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.logo-img:hover {
+  opacity: 0.8;
+}
+.early-access {
+  display: flex;
+  --nav-height: 5vh;
+  margin: 10px;
+  margin-right: 20px;
+  right: auto;
+  border-radius: var(--nav-height);
+  border: 2px solid rgba(132, 226, 144, 0);
+  padding: 0 30px;
+  height: var(--nav-height);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  color: black;
+  font-weight: 600;
+  font-size: larger;
+
+  background: linear-gradient(45deg, rgb(132, 226, 145), rgb(154, 252, 255));
+  background-size: 200% 200%;
+  transition: background-position 0.6s ease;
+  background-position: 2%;
+}
+.early-access:hover {
+  background-position: 100% 0;
+  border-color: rgb(146, 255, 195);
+}
+
+/* Menu end */
+
+/* Header */
+header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+h1 {
+  font-size: 5vw;
+  user-select: none;
+}
+.header-description {
+  color: rgb(116, 116, 116);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-image-easily {
+  position: absolute;
+  --img-width: 50vw;
+  overflow: hidden;
+  width: var(--img-width);
+  left: -5%;
+  top: calc(50% - var(--img-width) / 3);
+  z-index: -1;
+}
+
+.header-image-focused {
+  position: absolute;
+  --img-focused-width: 60vw;
+  overflow: hidden;
+  width: var(--img-focused-width);
+  right: -10%;
+  bottom: calc(50% - var(--img-width) / 3);
+  z-index: -1;
+}
+/* Header end */
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  margin: 2vw;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+.text-picture-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5vw;
+  --max-width-content: 50%;
+}
+.text-picture-block2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5vw;
+  --max-width-content: 50%;
+}
+.text-picture-block-text {
+  flex: 1;
+  padding: 20px;
+  max-width: var(--max-width-content);
+  order: 1;
+}
+.text-picture-block-image {
+  /* flex: 1; */
+  max-width: var(--max-width-content);
+  height: auto;
+  border-radius: 20px;
+  order: 2;
+}
+.text-picture-block-image-second {
+  /* flex: 1; */
+  width: var(--max-width-content);
+  height: auto;
+  border-radius: 20px;
+  order: 1;
+}
+.text-picture-block-text-second {
+  flex: 1;
+  padding: 20px;
+  width: var(--max-width-content);
+  order: 2;
+}
+.three-slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 0 5vw;
+  gap: 6vw;
+}
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.slot-h2 {
+  font-size: 3vw;
+  color: rgb(85, 85, 85);
+  margin: 0;
+}
+.slot-p {
+  text-align: justify;
+  font-size: 1.2vw;
+}
+.slot-image {
+  width: 20%;
+  height: auto;
+}
+
+/* Main content end */
+
+/* Early access section */
+
+.early-access-section-box {
+  /* ... tvé ostatní styly (background, display, atd.) ... */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(199, 251, 255),
+    rgb(195, 255, 225)
+  );
+  width: 100%;
+  height: max-content;
+  position: relative;
+
+  /* Definice SVG masky */
+  --svg-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cmask id='m'%3E%3Crect width='100%25' height='100%25' fill='white'/%3E%3Crect width='100%25' height='80' rx='40' y='-40' fill='black'/%3E%3C/mask%3E%3Crect width='100%25' height='100%25' fill='white' mask='url(%23m)'/%3E%3C/svg%3E");
+
+  /* Webkit (Safari, iOS, starší Chrome) - MUSÍ BÝT PRVNÍ */
+  -webkit-mask-image: var(--svg-mask);
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  /* Standardní vlastnosti */
+  mask-image: var(--svg-mask);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/* Úprava obsahu, aby nezasahoval do výřezu */
+.content {
+  margin-top: var(--cutout-height);
+}
+
+.early-access-form {
+  width: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: x-large;
+}
+
+.early-form {
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 30px;
+  /* border: 2px solid rgb(70, 70, 70); */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.email {
+  font-family: Gabarito, Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color: #000;
+  width: calc(100% - 20px);
+  margin: 0;
+  padding: 10px;
+  font-size: large;
+  border-radius: 100px;
+  border: 2px solid rgb(131, 131, 131);
+  background-color: rgba(255, 255, 255, 0.39);
+}
+.email::placeholder {
+  color: rgb(54, 54, 54);
+}
+.email:focus {
+  outline: none;
+  border-color: rgb(153, 255, 221);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+input[type="checkbox"] {
+  /* Zvětší checkbox na 1.5 násobek původní velikosti */
+  transform: scale(2);
+  /* Přidáme margin, aby zvětšený checkbox nezasahoval do textu */
+  margin-right: 10px;
+  cursor: pointer;
+}
+.extension-h2 {
+  margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-copyright-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 25vh;
+  font-weight: 100;
+  color: rgb(121, 121, 121);
+}

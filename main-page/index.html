@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Development</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../mobile-styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="https://www.robinsafarik.cz/about-en.html" class="logo">
+        <img class="logo-img" src="../images/logo-shadow.png" alt="Logo" />
+      </a>
+      <a href="#early-access" class="early-access">Get Early Access</a>
+    </nav>
+    <main>
+      <header>
+        <h1>
+          Store, Organize & Revisit
+          <span class="header-description"><br />Your Ideas</span>
+          <img
+            src="../images/easily.png"
+            alt="Easily"
+            class="header-image-easily"
+          />
+          <img
+            src="../images/focused.png"
+            alt="Focused"
+            class="header-image-focused"
+          />
+        </h1>
+      </header>
+      <section class="main-content">
+        <div class="text-picture-block">
+          <div class="text-picture-block-text">
+            <h2>Best ideas don't wait</h2>
+            <h3>- and neither does interesting information.</h3>
+            <p>
+              They appear during a walk, in class, or between meetings — and
+              disappear just as fast.
+            </p>
+          </div>
+          <img
+            src="../images/Notanki-transparent-notuski.png"
+            alt="Early Access"
+            class="text-picture-block-image"
+          />
+        </div>
+        <div class="text-picture-block">
+          <img
+            class="text-picture-block-image-second"
+            src="../images/Notanki-transparent-jotuski.png"
+            alt="Early Access"
+          />
+          <div class="text-picture-block-text">
+            <p>
+              We’re building a simple, distraction-free device to instantly
+              capture thoughts and valuable information, so you can return to
+              them later — organized and ready to use.
+              <br />
+              No noise. No competing apps. Just what matters, saved before it’s
+              gone. It uses e-ink technology with stylus pen for a natural
+              writing experience.
+            </p>
+          </div>
+        </div>
+        <div class="three-slots">
+          <div class="slot">
+            <img
+              src="../images/pocket-icon.png"
+              class="slot-image"
+              alt="Pocket Icon"
+            />
+            <h2 class="slot-h2">Pocketability</h2>
+            <p class="slot-p">
+              Thanks to its pocketable size, it's always within reach, ready for
+              capturing the best thoughts.
+            </p>
+          </div>
+          <div class="slot">
+            <img
+              src="../images/focus-icon.png"
+              class="slot-image"
+              alt="Pocket Icon"
+            />
+            <h2 class="slot-h2">Focus</h2>
+            <p class="slot-p">
+              It is a digital notebook designed just for managing your notes.
+              Hereby, it offers a focused workspace with no distractions.
+            </p>
+          </div>
+          <div class="slot">
+            <img
+              src="../images/unity.png"
+              class="slot-image"
+              alt="Pocket Icon"
+            />
+            <h2 class="slot-h2">Unity</h2>
+            <p class="slot-p">
+              Unlike notes on scraps of paper or in several notebooks, this
+              device offers a unified system allowing you to easily find and
+              organize your notes in one dedicated place.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="form-wrapper">
+      <section class="early-access-section-box" id="early-access">
+        <h2 class="extension-h2">We have only scratched the surface.</h2>
+
+        <div class="text-picture-block">
+          <div class="text-picture-block-text" style="order: 0">
+            <p>
+              Currently we are collecting valuable feedback that helps us decide
+              whether it is worth realizing the product. Your insights can
+              directly shape it.
+            </p>
+            <h3>Join the waitlist to be the first to know what's next.</h3>
+          </div>
+          <form id="early-access-form" class="early-form">
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Please enter your email address"
+              required
+            />
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="gdpr" name="gdpr" value="1" required />
+              <label for="gdpr">I consent to the processing of my data.</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input
+                type="checkbox"
+                id="wantsNewsletter"
+                name="wantsNewsletter"
+                value="1"
+              />
+              <label for="wantsNewsletter"
+                >I want to receive occasional updates about the project.
+                <em style="font-size: large; color: rgb(114, 114, 114)"
+                  ><br />You can unsubscribe anytime.</em
+                ></label
+              >
+            </div>
+
+            <button
+              style="width: calc(100% - 20px)"
+              class="early-access"
+              type="submit"
+              id="submit-btn"
+            >
+              Join Waitlist
+            </button>
+          </form>
+        </div>
+
+        <div id="thank-you-message" style="display: none; text-align: center">
+          <h2>You're on the list!</h2>
+          <p>
+            Thank you for the interest! We’ll notify you the moment we’re ready
+            for the next step.<br />
+            <span style="color: rgb(117, 117, 117)"
+              >Help us grow the community:<a
+                style="color: rgb(0, 150, 209)"
+                href="https://www.next.robinsafarik.cz"
+              >
+                next.robinsafarik.cz</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="name-copyright-wrapper">
+          <p style="margin-left: 20px">Contact me: robinjos.vlcr@gmail.com</p>
+          <p style="margin-left: auto; margin-right: 20px">
+            © 2026, all rights reserved.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const form = document.getElementById("early-access-form");
+      // Cílíme na obsah, který má zmizet (nadpis a blok s formulářem)
+      const thankYouMessage = document.getElementById("thank-you-message");
+
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwcZlJZoAGSUgJSrlSAhebA-cAtrBcZTtm-GQGZ-KvQl-UdGgUJvL6IURTshW45gwbw3Q/exec";
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const btn = document.getElementById("submit-btn");
+        btn.disabled = true;
+        btn.innerText = "Sending...";
+
+        const formData = new FormData(form);
+
+        fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        })
+          .then(() => {
+            // 1. Najdeme nadpis a text-picture-block uvnitř sekce a skryjeme je
+            // Tím uvolníme místo pro děkovnou zprávu
+            document.querySelector("#early-access h2").style.display = "none";
+            document.querySelector(
+              "#early-access .text-picture-block",
+            ).style.display = "none";
+
+            // 2. Ukážeme poděkování
+            thankYouMessage.style.display = "block";
+
+            // 3. Odrolujeme na zprávu (důležité pro mobily)
+            thankYouMessage.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            alert("Something went wrong, please try again.");
+            btn.disabled = false;
+            btn.innerText = "Join Waitlist";
+          });
+      });
+    </script>
+  </body>
+</html>
