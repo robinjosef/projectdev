@@ -76,4 +76,11 @@
   .name-copyright-wrapper {
     flex-direction: column;
   }
+  .better-gallery {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 90%;
+    /* margin-bottom: 5vw; */
+  }
 }

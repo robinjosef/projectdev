@@ -326,3 +326,27 @@ input[type="checkbox"] {
   font-weight: 100;
   color: rgb(121, 121, 121);
 }
+.better {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.better-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 90%;
+  /* margin-bottom: 5vw; */
+}
+.better-render {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.separator {
+  width: 80%;
+  height: 2px;
+  background-color: rgb(233, 233, 233);
+  margin: 40px auto;
+}
